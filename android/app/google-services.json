@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "400719860485",
+    "project_id": "jotnotes-flutter-project",
+    "storage_bucket": "jotnotes-flutter-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400719860485:android:d036d9385571042b3edd6c",
+        "android_client_info": {
+          "package_name": "com.ndaku.notebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400719860485-1rg8be7l90ulsq4bcqda6v7k2esm8m6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjU7TlPlZxc5fm6K6lbR75Sj76vc017Fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400719860485-1rg8be7l90ulsq4bcqda6v7k2esm8m6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
