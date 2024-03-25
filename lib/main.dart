@@ -50,12 +50,29 @@ class HomePage extends StatelessWidget {
                   print("You are a verified user");
                 } else {
                   print("Your need to verify your email first");
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => VerifyEmailView(),
+                  ));
                 }
-                return const Text('Done');
+                return const Text("Done");
               default:
                 return const Text('Accessing Servers');
             }
           }),
     );
+  }
+}
+
+class VerifyEmailView extends StatefulWidget {
+  const VerifyEmailView({super.key});
+
+  @override
+  State<VerifyEmailView> createState() => _VerifyEmailViewState();
+}
+
+class _VerifyEmailViewState extends State<VerifyEmailView> {
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold();
   }
 }
