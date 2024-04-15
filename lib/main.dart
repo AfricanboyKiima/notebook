@@ -20,7 +20,7 @@ app's lifecycle and provide widget rendering and user data handling services*/
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      home: const HomePage(),
+      home: const LoginView(),
     ),
   );
 }
@@ -43,15 +43,11 @@ class HomePage extends StatelessWidget {
               case ConnectionState.done:
                 final user = FirebaseAuth.instance
                     .currentUser; //Retrieve current user who is authenticated in my firebase project
-
-                final emailVerified = user?.emailVerified ?? false;
-
-                if (emailVerified) {
+                if (user?.emailVerified ?? false) {
                   print("You are a verified user");
                 } else {
-                  print("Your need to verify your email first");
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => VerifyEmailView(),
+                    builder: (context) => const VerifyEmailView(),
                   ));
                 }
                 return const Text("Done");
