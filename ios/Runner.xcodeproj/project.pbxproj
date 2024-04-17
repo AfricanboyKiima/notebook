@@ -475,7 +475,7 @@
 				249021D4217E4FDB00AE95B9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			furationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
